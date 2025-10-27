@@ -80,23 +80,53 @@
       <div class="container">
         <h2>Our Services</h2>
         <div class="service-cards">
-          <div class="card">
+          <!-- Card 1 -->
+          <div class="card" data-modal="pettingModal">
+            <!-- <img src="petting-zoo.jpg" alt="Petting Zoo" /> -->
             <h3>Mobile Petting Zoo</h3>
-            <p>
-              We bring friendly animals right to your event. Perfect for kids
-              and family fun!
-            </p>
+            <p>We bring friendly animals right to your event.</p>
+            <button class="btn">Learn More</button>
           </div>
-          <div class="card">
+
+          <!-- Card 2 -->
+          <div class="card" data-modal="ridingModal">
+            <!-- <img src="horseback-riding.jpg" alt="Horseback Riding" /> -->
             <h3>Horseback Riding</h3>
-            <p>
-              Safe and enjoyable guided pony and horse rides for all skill
-              levels.
-            </p>
+            <p>Safe and fun rides for all ages.</p>
+            <button class="btn">Learn More</button>
           </div>
+
+          <!-- Add more cards as needed -->
         </div>
       </div>
     </section>
+
+    <!-- Modal 1 -->
+    <div id="pettingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Mobile Petting Zoo</h2>
+        <p>
+          Our mobile petting zoo brings adorable goats, sheep, rabbits,
+          chickens, and even miniature ponies directly to your event! Perfect
+          for birthday parties, school events, and community fairs. Each session
+          includes a trained handler to ensure a safe, fun experience.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="ridingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Horseback Riding</h2>
+        <p>
+          We offer guided pony and horse rides that are perfect for kids and
+          adults alike. Our calm, well-trained animals and professional staff
+          ensure every rider feels comfortable and confident.
+        </p>
+      </div>
+    </div>
 
     <!-- About -->
     <section id="about" class="about">
