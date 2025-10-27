@@ -115,7 +115,7 @@ header {
   background-color: #ffd93d; /* warm yellow */
   padding: 15px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000; /* ensures it stays above other content */
 }
