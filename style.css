@@ -40,7 +40,7 @@ header .logo {
 
 /* Shrink effect on scroll */
 header.shrink {
-  padding: 4px 0;
+  padding: 10px 0;
 }
 
 .header-container {
