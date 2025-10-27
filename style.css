@@ -18,6 +18,9 @@ body {
 
 header {
   background-color: #ffd93d;
+  background-image: url('4431744.jpg');
+  background-repeat: repeat; /* repeats the pattern */
+  background-size: auto; /* keep original size, can also use 'contain' */
   padding: 15px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -112,12 +115,16 @@ nav ul li a:hover {
 }
 
 header {
-  background-color: #ffd93d; /* warm yellow */
+  background-color: #ffd93d;
+  background-image: url('4431744.jpg');
+  background-repeat: repeat; /* repeats the pattern */
+  background-size: auto; /* keep original size, can also use 'contain' */
   padding: 15px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
+  width: 100%;
   top: 0;
-  z-index: 1000; /* ensures it stays above other content */
+  z-index: 1000;
 }
 
 .img-logo {
@@ -142,12 +149,13 @@ header h1 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
   color: #5a3e36; /* chocolate brown */
-  padding-left: 50px;
+  padding-left: 100px;
 }
 
 img {
   height: 60px;
   width: auto;
+  min-width: 75px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
