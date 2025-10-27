@@ -15,10 +15,18 @@
     <header>
       <div class="container header-container">
         <div class="logo-title">
-          <h1>Ponies "R" Us Mobile Petting Zoo</h1>
+          <h1>Ponies "R" Us</h1>
           <img src="Logo.jpg" alt="Ponies R Us Logo" class="logo" />
         </div>
-        <nav>
+
+        <!-- Hamburger Button -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="nav-menu">
           <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
@@ -30,7 +38,6 @@
 
     <!-- Hero Section -->
     <section class="hero">
-      <!-- Video Background -->
       <video class="hero-video" autoplay muted loop playsinline>
         <source
           src="https://www.pexels.com/download/video/7781775/"
@@ -38,8 +45,6 @@
         />
         Your browser does not support the video tag.
       </video>
-
-      <!-- Overlay & Content -->
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <h2>Bringing Animals and Fun to Your Door!</h2>
@@ -47,9 +52,26 @@
           We specialize in mobile petting zoos and horseback riding experiences
           for events of all sizes.
         </p>
-        <a href="#contact" class="btn">Book Your Event</a>
+        <a href="#" class="btn" id="bookBtn">Book Your Event</a>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Book Your Event</h2>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScPG93xUvQFFhxErEUuLSTgU7TL-yGPykbJyQOHDLa2PUOq2A/viewform?embedded=true"
+          width="100%"
+          height="600"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+        </iframe>
+      </div>
+    </div>
 
     <!-- Services -->
     <section id="services" class="services">
@@ -57,7 +79,6 @@
         <h2>Our Services</h2>
         <div class="service-cards">
           <div class="card">
-            <img src="petting-zoo.jpg" alt="Petting Zoo" />
             <h3>Mobile Petting Zoo</h3>
             <p>
               We bring friendly animals right to your event. Perfect for kids
@@ -65,7 +86,6 @@
             </p>
           </div>
           <div class="card">
-            <img src="horseback-riding.jpg" alt="Horseback Riding" />
             <h3>Horseback Riding</h3>
             <p>
               Safe and enjoyable guided pony and horse rides for all skill
@@ -93,6 +113,7 @@
       <div class="container">
         <h2>Contact Us</h2>
         <p>Email: info@poniesrus.com | Phone: (555) 123-4567</p>
+
         <form>
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
@@ -103,6 +124,20 @@
           ></textarea>
           <button type="submit" class="btn">Send Message</button>
         </form>
+
+        <!-- Google Map -->
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.558992327212!2d-83.25252608455014!3d42.14760097920756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b0f29eac10d0b%3A0xb30390fdb2e5f87a!2s28400%20Grix%20Rd%2C%20New%20Boston%2C%20MI%2048164!5e0!3m2!1sen!2sus!4v1708875068594!5m2!1sen!2sus"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
       </div>
     </section>
 
