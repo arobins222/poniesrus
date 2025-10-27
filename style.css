@@ -27,6 +27,21 @@ header {
   width: 100%;
   top: 0;
   z-index: 1000;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 8px 0; /* smaller vertical padding */
+  transition: all 0.3s ease; /* keeps shrinking effect smooth */
+}
+
+header .logo {
+  height: 40px; /* reduce from 60px */
+  width: auto;
+}
+
+/* Shrink effect on scroll */
+header.shrink {
+  padding: 4px 0;
 }
 
 .header-container {
