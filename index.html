@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ponies "R" Us</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo-title">
+          <h1>Ponies "R" Us Mobile Petting Zoo</h1>
+          <img src="Logo.jpg" alt="Ponies R Us Logo" class="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Video Background -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source
+          src="https://www.pexels.com/download/video/7781775/"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay & Content -->
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h2>Bringing Animals and Fun to Your Door!</h2>
+        <p>
+          We specialize in mobile petting zoos and horseback riding experiences
+          for events of all sizes.
+        </p>
+        <a href="#contact" class="btn">Book Your Event</a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <img src="petting-zoo.jpg" alt="Petting Zoo" />
+            <h3>Mobile Petting Zoo</h3>
+            <p>
+              We bring friendly animals right to your event. Perfect for kids
+              and family fun!
+            </p>
+          </div>
+          <div class="card">
+            <img src="horseback-riding.jpg" alt="Horseback Riding" />
+            <h3>Horseback Riding</h3>
+            <p>
+              Safe and enjoyable guided pony and horse rides for all skill
+              levels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Ponies "R" Us is a family-owned business dedicated to bringing
+          unforgettable animal experiences to your events. Our team prioritizes
+          safety, fun, and making memories!
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Email: info@poniesrus.com | Phone: (555) 123-4567</p>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Ponies "R" Us. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
