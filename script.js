@@ -63,3 +63,5 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) modal.style.display = 'none';
   });
 });
+
+document.getElementById('year').textContent = new Date().getFullYear();
