@@ -38,6 +38,25 @@ header .logo {
   width: auto;
 }
 
+@media (max-width: 468px) {
+  header {
+    padding: 2px 0; /* reduce header height */
+  }
+
+  .logo {
+    height: 40px; /* smaller logo */
+  }
+
+  header h1 {
+    font-size: 1.4rem; /* smaller text for title */
+    padding-left: 10px; /* remove large left spacing */
+  }
+
+  .header-container {
+    padding: 0 8px; /* tighter spacing around content */
+  }
+}
+
 /* Shrink effect on scroll */
 header.shrink {
   padding: 10px 0;
@@ -109,11 +128,11 @@ nav ul li a:hover {
   }
 
   header {
-    padding: 6px 0;
+    padding: 3px 0;
   }
 
   .header-container {
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   nav ul {
