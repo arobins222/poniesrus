@@ -21,7 +21,7 @@ header {
   background-image: url('4431744.jpg');
   background-repeat: repeat; /* repeats the pattern */
   background-size: auto; /* keep original size, can also use 'contain' */
-  padding: 15px 0;
+  padding: 5px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -131,6 +131,21 @@ nav ul li a:hover {
   }
 }
 
+@media (min-width: 200px) {
+  html,
+  body {
+    overflow-x: hidden; /* prevents scrollbars */
+  }
+
+  header {
+    padding: 3px 0;
+  }
+
+  .header-container {
+    padding: 0 5px;
+  }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   nav {
@@ -164,7 +179,7 @@ header {
   background-image: url('4431744.jpg');
   background-repeat: repeat; /* repeats the pattern */
   background-size: auto; /* keep original size, can also use 'contain' */
-  padding: 15px 0;
+  padding: 5px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
@@ -567,4 +582,10 @@ footer {
   .hero h2 {
     font-size: 2.2rem;
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
