@@ -18,19 +18,24 @@ body {
 
 header {
   background-color: #ffd93d;
-  background-image: url('4431744.jpg');
-  background-repeat: repeat; /* repeats the pattern */
-  background-size: auto; /* keep original size, can also use 'contain' */
-  padding: 5px 0;
+  background-image: url('background.png');
+  background-repeat: no-repeat; /* repeats the pattern */
+  background-size: contain; /* keep original size, can also use 'contain' */
+  padding: 3px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 0;
+  min-height: 100%;
   width: 100%;
   top: 0;
   z-index: 1000;
   padding: 8px 0; /* smaller vertical padding */
   transition: all 0.3s ease; /* keeps shrinking effect smooth */
+  position: relative;
+  top: -20px;
+  object-fit: cover;
+  margin: 0;
 }
 
 header .logo {
@@ -195,15 +200,20 @@ nav ul li a:hover {
 
 header {
   background-color: #ffd93d;
-  background-image: url('4431744.jpg');
-  background-repeat: repeat; /* repeats the pattern */
-  background-size: auto; /* keep original size, can also use 'contain' */
-  padding: 5px 0;
+  background-image: url('background.png');
+  background-repeat: no-repeat; /* repeats the pattern */
+  background-size: cover; /* keep original size, can also use 'contain' */
+  padding: 3px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed;
+  min-height: 100%;
   width: 100%;
   top: 0;
   z-index: 1000;
+  position: relative;
+  top: -20px;
+  object-fit: cover;
+  margin: 0;
 }
 
 .img-logo {
@@ -235,11 +245,6 @@ img {
   height: 60px;
   width: auto;
   min-width: 75px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   position: absolute;
 }
 
@@ -284,7 +289,20 @@ nav ul li a:hover {
   z-index: -2;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  overflow: hidden; /* make sure any extra video doesn't cause scroll */
+  overflow: hidden;
+}
+
+/* Overlay layer */
+.hero-video::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* stays above video, but below content */
+  background: rgba(0, 0, 0, 0.45); /* adjust color and opacity */
+  pointer-events: none; /* lets you click elements above */
 }
 
 body,
